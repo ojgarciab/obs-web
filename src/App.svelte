@@ -185,7 +185,7 @@
         }
       }
     }
-    setTimeout(getScreenshot, 1000);
+    setTimeout(getScreenshot, 50);
   }
 
   async function connect() {
@@ -440,6 +440,9 @@
       <div class="field is-grouped">
         <p class="control is-expanded">
           <input id="host" on:keyup={hostkey} bind:value={host} class="input" type="text" placeholder="localhost:4444" />
+        </p>
+        <p class="control">
+          <button on:click={connect} class="button is-success">Connect</button>
         </p>
         <p class="control">
           <button on:click={connect} class="button is-success">Connect</button>
